@@ -1,49 +1,3 @@
-// // all the libraries need for graphics, oled, dht sensor and arduino functions
-// #include<arduino.h>
-// #include<wire.h>
-// #include<Adafruit_GFX.h>
-// #include<Adafruit_SSD1306.h>
-
-// //defining pins
-// #define SCREEN_WIDTH 128
-// #define SCREEN_HEIGHT 64
-// Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
-
-// #define First_BTN 32
-// #define Second_BTN 33
-// #define LED1 18
-// #define LED2 19
-// #define buzzer 11
-
-// //now modes initilization
-// int mode=1; //mode=1 both off, mode=2 alternate blink, mode=3 both on, mode=4PWM fade
-// unsigned long lastPress=0;  //it remembers when the last button was pressed
-// int dutycycle=0; //it shows how bright the light is  it is the duty cycle (PWN cycle)
-// int fadedir=1;  //it shows the direction of fading 1-increasing brightness, 0-decreasing brightness
-
-// void showMode(String msg){
-//   display.clearDisplay();
-//   display.setTextSize(1);
-//   display.setTextColor(SSD1306_WHITE);
-//   display.setCursor(0,20);
-//   display.println("Mode is: " + msg);
-//   display.display();
-// }
-// void setup(){
-//   pinMode(First_BTN,INPUT_PULLUP);
-//   pinMode(Second_BTN,INPUT_PULLUP);
-//   pinMode(LED1, OUTPUT);
-//   pinMode(LED2,OUTPUT);
-//   pinMode(buzzer, OUTPUT);
-//   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-//   display.clearDisplay();
-//   showMode("OFF");
-// }
-
-// void loop(){
-
-// }
-
 #include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -53,10 +7,10 @@
 #define SCREEN_HEIGHT 64
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-#define BTN_MODE   12
-#define BTN_RESET  13
-#define LED1       2
-#define LED2       4
+#define BTN_MODE   25
+#define BTN_RESET  26
+#define LED1       16
+#define LED2       17
 #define LED3       18
 #define BUZZER     14
 
@@ -139,4 +93,3 @@ void loop() {
       break;
   }
 }
-
