@@ -4,7 +4,6 @@
 // //BS AI 5TH
 // //Submitted to: Sir Nasir
 
-
 #include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -134,11 +133,11 @@ void loop() {
   }
 }
 
-//Task B
-//Name: Arfa Faheem RegNo: 23-NTU-CS-1247
-//Embedded IOT Fall 2025
-//BS AI 5TH
-//Submitted to: Sir Nasir
+// //Task B
+// //Name: Arfa Faheem RegNo: 23-NTU-CS-1247
+// //Embedded IOT Fall 2025
+// //BS AI 5TH
+// //Submitted to: Sir Nasir
 
 
 #include <Arduino.h>
@@ -182,7 +181,7 @@ void setup() {
 
   // PWM buzzer setup
   ledcSetup(0, 2000, 10); // channel 0, 2 kHz frequency, 10-bit resolution
-  ledcAttachPin(BUZZER, 0);
+  ledcAttachPin(BUZZER, 0); 
 
   // Initialize OLED
   Wire.begin(21, 22);
