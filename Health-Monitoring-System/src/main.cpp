@@ -5,7 +5,6 @@
 
 //libraries used throughout the project
 #include <Wire.h>  //for I2C communication
-#include <OneWire.h>
 
 #include <MAX30100_PulseOximeter.h>  //for heart rate and SpO2 sensor
 // #include <DallasTemperature.h> //for body temperature sensor
